@@ -18,7 +18,7 @@
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link now" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link current">Гостиницы</a>
             </li>
           </ul>
 
@@ -34,9 +34,7 @@
                 </a>
             </li>
             <li class="navigation-item">
-                <a class="navigation-link" href="#">
-                  <span class="visually-hidden">Хочу сюда!</span>
-                </a>
+                <button class="navigation-button" type="button">Хочу сюда!</button>
             </li>
           </ul>
         </nav>
@@ -58,7 +56,7 @@
             </ul>
         </section>
         <section class="catalog-products">
-            <h2 class="visually-hidden">Список услуг с фильтрами</h2>
+            <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter">
                     <legend class="catalog-filter-title">Инфраструктура</legend>
@@ -134,19 +132,14 @@
                 <span class="product-card-type">Гостиница</span>
                 <span class="product-card-price">От 4000 ₽</span>
                 <a class="product-card-button-more" href="#">Подробнее</a>
-                <a class="product-card-button-like" href="#">В избранное</a>
-                <form class="product-card-stars" action="https://echo.htmlacademy.ru/" method="get">
-                    <div class="star-rating">
-                        <input id="star-rating-4" class="star-rating-item" type="radio" name="star-rating" value="4" checked>
-                        <label for="star-rating-4" class="star-rating-label"></label>
-                        <input id="star-rating-3" class="star-rating-item" type="radio" name="star-rating" value="3">
-                        <label for="star-rating-3" class="star-rating-label"></label>
-                        <input id="star-rating-2" class="star-rating-item" type="radio" name="star-rating" value="2">
-                        <label for="star-rating-2" class="star-rating-label"></label>
-                        <input id="star-rating-1" class="star-rating-item" type="radio" name="star-rating" value="1">
-                        <label for="star-rating-1" class="star-rating-label"></label>
-                    </div>
-                </form>
+                <button class="product-card-button-like" type="button">В избранное</button>
+                <div class="star-rating">
+                    <span class="star-rating-item checked"></span>
+                    <span class="star-rating-item checked"></span>
+                    <span class="star-rating-item checked"></span>
+                    <span class="star-rating-item checked"></span>
+                    <span class="star-rating-item"></span>
+                </div>
                 <span class="product-card-rank">Рейтинг:8,5</span>
             </div>
             <div class="product-card">
@@ -157,19 +150,14 @@
                 <span class="product-card-type">Гостиница</span>
                 <span class="product-card-price">От 5000 ₽</span>
                 <a class="product-card-button-more" href="#">Подробнее</a>
-                <a class="product-card-button-like-choose" href="#">В избранном</a>
-                <form class="product-card-stars" action="https://echo.htmlacademy.ru/" method="get">
-                    <div class="star-rating">
-                        <input id="star-rating-4" class="star-rating-item" type="radio" name="star-rating" value="4" checked>
-                        <label for="star-rating-4" class="star-rating-label"></label>
-                        <input id="star-rating-3" class="star-rating-item" type="radio" name="star-rating" value="3">
-                        <label for="star-rating-3" class="star-rating-label"></label>
-                        <input id="star-rating-2" class="star-rating-item" type="radio" name="star-rating" value="2">
-                        <label for="star-rating-2" class="star-rating-label"></label>
-                        <input id="star-rating-1" class="star-rating-item" type="radio" name="star-rating" value="1">
-                        <label for="star-rating-1" class="star-rating-label"></label>
-                    </div>
-                </form>
+                <button class="product-card-button-like" type="button">В избранное</button>
+                <div class="star-rating">
+                    <span class="star-rating-item checked"></span>
+                    <span class="star-rating-item checked"></span>
+                    <span class="star-rating-item checked"></span>
+                    <span class="star-rating-item checked"></span>
+                    <span class="star-rating-item"></span>
+                </div>
                 <span class="product-card-rank">Рейтинг:9,2</span>
             </div>
             <div class="product-card">
@@ -180,19 +168,14 @@
                 <span class="product-card-type">Гостиница</span>
                 <span class="product-card-price">От 2500 ₽</span>
                 <a class="product-card-button-more" href="#">Подробнее</a>
-                <a class="product-card-button-like" href="#">В избранное</a>
-                <form class="product-card-stars" action="https://echo.htmlacademy.ru/" method="get">
-                    <div class="star-rating">
-                        <input id="star-rating-4" class="star-rating-item" type="radio" name="star-rating" value="4">
-                        <label for="star-rating-4" class="star-rating-label"></label>
-                        <input id="star-rating-3" class="star-rating-item" type="radio" name="star-rating" value="3" checked>
-                        <label for="star-rating-3" class="star-rating-label"></label>
-                        <input id="star-rating-2" class="star-rating-item" type="radio" name="star-rating" value="2">
-                        <label for="star-rating-2" class="star-rating-label"></label>
-                        <input id="star-rating-1" class="star-rating-item" type="radio" name="star-rating" value="1">
-                        <label for="star-rating-1" class="star-rating-label"></label>
-                    </div>
-                </form>
+                <button class="product-card-button-like" type="button">В избранное</button>
+                <div class="star-rating">
+                    <span class="star-rating-item checked"></span>
+                    <span class="star-rating-item checked"></span>
+                    <span class="star-rating-item checked"></span>
+                    <span class="star-rating-item"></span>
+                    <span class="star-rating-item"></span>
+                </div>
                 <span class="product-card-rank">Рейтинг:6,9</span>
             </div>
             <div class="product-card">
@@ -203,19 +186,14 @@
                 <span class="product-card-type">Гостиница</span>
                 <span class="product-card-price">От 1500 ₽</span>
                 <a class="product-card-button-more" href="#">Подробнее</a>
-                <a class="product-card-button-like" href="#">В избранное</a>
-                <form class="product-card-stars" action="https://echo.htmlacademy.ru/" method="get">
-                    <div class="star-rating">
-                        <input id="star-rating-4" class="star-rating-item" type="radio" name="star-rating" value="4">
-                        <label for="star-rating-4" class="star-rating-label"></label>
-                        <input id="star-rating-3" class="star-rating-item" type="radio" name="star-rating" value="3">
-                        <label for="star-rating-3" class="star-rating-label"></label>
-                        <input id="star-rating-2" class="star-rating-item" type="radio" name="star-rating" value="2" checked>
-                        <label for="star-rating-2" class="star-rating-label"></label>
-                        <input id="star-rating-1" class="star-rating-item" type="radio" name="star-rating" value="1">
-                        <label for="star-rating-1" class="star-rating-label"></label>
-                    </div>
-                </form>
+                <button class="product-card-button-like" type="button">В избранное</button>
+                <div class="star-rating">
+                    <span class="star-rating-item checked"></span>
+                    <span class="star-rating-item checked"></span>
+                    <span class="star-rating-item"></span>
+                    <span class="star-rating-item"></span>
+                    <span class="star-rating-item"></span>
+                </div>
                 <span class="product-card-rank">Рейтинг:5,0</span>
             </div>
             <ul class="pagination">
@@ -253,19 +231,19 @@
           <h2 class="visually-hidden">Соцсети</h2>
           <ul class="footer-socials-list">
             <li class="footer-socials-item">
-              <a class="socials-button" href="#">
+              <a class="socials-button" href="https://vk.com/htmlacademy">
                 <img class="socials-image" src="#" alt="Вконтакте">
                 <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
             <li class="contacts-item">
-              <a class="socials-button" href="#">
+              <a class="socials-button" href="https://t.me/htmlacademy">
                 <img class="socials-image" src="#" alt="Телеграм">
                 <span class="visually-hidden">Телеграм</span>
               </a>
             </li>
             <li class="contacts-item">
-              <a class="socials-button" href="#">
+              <a class="socials-button" href=" https://www.youtube.com/user/htmlacademyru">
                 <img class="socials-image" src="#" alt="Ютуб">
                 <span class="visually-hidden">Ютуб</span>
               </a>
