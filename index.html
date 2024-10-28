@@ -6,7 +6,156 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+    <header class="main-header">
+      <a class="logo">
+        <img class="logo-image" src="images/logo.svg" alt="Логотип">
+      </a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
 
+        <ul class="navigation-icons">
+          <li class="navigation-item">
+              <a class="navigation-link" href="">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+          </li>
+          <li class="navigation-item">
+              <a class="navigation-link" href="">
+                <span class="visually-hidden">Избранное</span>
+              </a>
+          </li>
+          <li class="navigation-item">
+              <a class="navigation-link" href="">
+                <span class="visually-hidden">Хочу сюда!</span>
+              </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-index">
+      <section class="background">
+        <h1 class="visually-hidden">Седона</h1>
+        <img class="background-image" src="#" alt="Горы">
+        <img class="background-text" src="#" alt="Добро пожаловать в Седону">
+      </section>
+
+      <section class="description">
+        <header class="description-header">
+          <h2 class="title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="title-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!<p>
+        </header>
+        <ul class="advantages-list">
+          <li class="advantages-item-top">
+            <h3 class="advantages-title">Настоящий городок</h3>
+            <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img class="advantages-image" src="images/photo-1.jpg" alt="Вид города" width="800" height="385">
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-title">Небольшая площадь</h3>
+            <p class="advantages-text"></p>Все достопримечательности находятся очень близко
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-title">Красивая дорога</h3>
+            <p class="advantages-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-title">Мало туристов</h3>
+            <p class="advantages-text">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+          <li class="advantages-item-bottom">
+            <h3 class="advantages-title">Там есть мост дьявола</h3>
+            <p class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <img class="advantages-image" src="images/photo-2.jpg" alt="Мост дьявола" width="800" height="385">
+          </li>
+        </ul>
+      </section>
+
+      <section class="service">
+        <header class="description-header">
+          <h2 class="title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+          <p class="title-description">Опытный персонал и качественное обслуживание!</p>
+        </header>
+        <ul class="service-list">
+          <li class="service-item">
+            <img class="service-image" src="#" alt="Дом">
+            <h3 class="service-title">Жилье</h3>
+            <p class="service-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li class="service-item">
+            <img class="service-image" src="#" alt="Бургер">
+            <h3 class="service-title">Еда</h3>
+            <p class="service-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="service-item">
+            <img class="service-image" src="#" alt="Подарок">
+            <h3 class="service-title">Сувениры</h3>
+            <p class="service-text">Не только китайского, но и настоящего местного производства!</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="hotel-search">
+        <header class="hotel-search-header">
+          <h2 class="title">Заинтересовались?</h2>
+          <p class="title-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        </header>
+        <a class="search" href="#">Поиск гостиницы в седоне</a>
+      </section>
+    </main>
+
+    <footer>
+      <section class="mailing-list">
+        <h2 class="title-footer">Подпишитесь на рассылку</h2>
+        <p class="title-description footer">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <img class="footer-background" src="#" alt="Пейзаж">
+        <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input name="email" type="email" value="Ваш email">
+          <button class="button" type="submit">Подписаться</button>
+        </form>
+      </section>
+      <section class="footer-socials">
+        <h2 class="visually-hidden">Соцсети</h2>
+        <ul class="footer-socials-list">
+          <li class="footer-socials-item">
+            <a class="socials-button" href="https://vk.com/htmlacademy">
+              <img class="socials-image" src="#" alt="Вконтакте">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="contacts-item">
+            <a class="socials-button" href="https://t.me/htmlacademy">
+              <img class="socials-image" src="#" alt="Телеграм">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="contacts-item">
+            <a class="socials-button" href=" https://www.youtube.com/user/htmlacademyru">
+              <img class="socials-image" src="#" alt="Ютуб">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+        <a class="contacts-phone" href="tel:+78128121212">
+          +7 (812) 812-12-12
+        </a>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">
+            .html academy
+          </span>
+          <img class="htmlacademy-image" src="#" alt="Логотип HTML Academy">
+        </a>
+      </section>
+    </footer>
   </body>
 </html>
