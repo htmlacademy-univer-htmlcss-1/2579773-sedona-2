@@ -32,7 +32,12 @@ body {
 
 .main-container {
     flex-grow: 1;
-  }
+}
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
 
 .main-header {
     background-color: #FFFF;
@@ -84,6 +89,7 @@ body {
     text-transform: uppercase;
     border-radius: 4px;
     border: none;
+    height: 36px;
 }
 
 .brown-button {
@@ -205,7 +211,7 @@ body {
 .service-title {
     color: #000;
     font-size: 24px;
-    font-weight: 700px;
+    font-weight: 700;
     line-height: 28px;
     text-transform: uppercase;
 }
@@ -213,12 +219,13 @@ body {
 .service-item-no-background {
     color: #000;
     background-color: #FFF;
+    width: 400px;
 }
 
 .service-text {
     color: #333;
     font-size: 18px;
-    font-weight: 400px;
+    font-weight: 400;
     line-height: 21px;
 }
 
@@ -296,6 +303,11 @@ body {
     color: #FFF;
 }
 
+.inner-filter {
+    width: 1060px;
+    margin: 0 auto;
+}
+
 .inner-catalog-title {
     font-size: 60px;
     line-height: 78px;
@@ -310,6 +322,7 @@ body {
 
 .catalog-filter {
     border: none;
+    display: flex;
 }
 
 .catalog-filter-title {
@@ -332,6 +345,12 @@ body {
 .catalog-result {
     color: #000;
     background-color: #FFF;
+    display: flex;
+}
+
+.catalog-result-top {
+    display: flex;
+    width: 1060px;
 }
 
 .catalog-result-title {
@@ -440,7 +459,7 @@ body {
 .title-footer-catalog {
     font-size: 30px;
     line-height: 36px;
-    font-weight: 700px;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
