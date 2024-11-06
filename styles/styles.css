@@ -41,6 +41,17 @@ body {
     height: 36px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* index */
 
 .main-container {
@@ -73,6 +84,10 @@ body {
     margin: 0;
     padding: 0;
     width: 892px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 540px;
 }
 
 .navigation-icons {
@@ -88,11 +103,26 @@ body {
     text-decoration: none;
     background-color: #FFF;
     text-align: center;
+    padding: 20px 16px;
+    display: block;
+}
+
+.icons-link {
+    padding: 22px 12px;
+}
+
+.icons-button {
+    padding: 14px 0 14px 20px;
+}
+
+.logo {
+    display: block;
+    height: 64px;
 }
 
 .logo-image {
-    width: 140px;
     margin-right: 30px;
+    position: relative;
 }
 
 /* main */
@@ -100,6 +130,7 @@ body {
 .background-text {
     display: block;
     margin: 0 auto;
+    padding: 51px 371px 82px;
 }
 
 .brown-button {
@@ -131,10 +162,20 @@ body {
     color: #000;
     background-color: #FFF;
     text-align: center;
-    margin-bottom: 90px;
+}
+
+.description-header-title {
+    width: 620px;
+    margin: 0 290px 25px;
+}
+
+.description-header-title-description {
+    width: 651px;
+    margin: 0 274.5px 90px;
 }
 
 .title {
+    margin: 0;
     color: #000;
     font-size: 30px;
     line-height: 36px;
@@ -143,6 +184,7 @@ body {
 }
 
 .title-description {
+    margin: 0;
     color: #000;
     font-size: 22px;
     line-height: 26px;
@@ -156,6 +198,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 64px;
+    list-style-type: none;
 }
 
 .advantages-item-top, .advantages-item-bottom  {
@@ -171,20 +214,25 @@ body {
     color: #000;
     text-align: center;
     width: 400px;
+    height: 400px;
 }
 
 .advantages-item-text {
     flex-direction: column;
+    padding: 102px 84px;
 }
 
 .advantages-title {
+    margin: 0;
     color: #000;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    margin-bottom: 62px;
 }
 
 .advantages-text{
+    margin: 0;
     color: #000;
     font-size: 18px;
     line-height: 21px;
@@ -210,20 +258,33 @@ body {
     text-align: center;
 }
 
+.service-header-description {
+    width: 490px;
+    margin: 0 355px 64px;
+}
+
+.service-header-title {
+    width: 505px;
+    margin: 0 347.5px 20px;
+}
+
 .service-list {
     background: rgba(131, 179, 211, 0.12);
     margin: 0;
     padding: 0;
     display: flex;
     margin-bottom: 96px;
+    list-style-type: none;
 }
 
 .service-title {
+    margin: 0;
     color: #000;
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .service-item-no-background {
@@ -233,21 +294,44 @@ body {
 }
 
 .service-text {
+    margin: 0;
     color: #333;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
 }
 
+.service-image {
+    margin-bottom: 30px;
+}
+
 .service-item {
     width: 400px;
+    height: 385px;
+}
+
+.service-item-content {
+    margin: 81px 85px;
 }
 
 .hotel-search {
     color: #000;
     background-color: #FFF;
     text-align: center;
+    width: 592px;
+    margin:  0 auto;
+    margin-bottom: 96px;
 }
+
+.hotel-search-title {
+    margin-bottom: 20px;
+}
+
+.title-description {
+    margin-bottom: 54px;
+}
+
+/* footer */
 
 .mailing-list {
     color: #000;
@@ -257,7 +341,10 @@ body {
     margin: 0 auto;
 }
 
-/* footer */
+.mailing-list-content {
+    width: 684px;
+    padding: 96px 258px 104px;
+}
 
 .index-footer{
     background-image: url("../images/Subscribe.jpg");
@@ -268,10 +355,21 @@ body {
 
 .title-footer {
     color: #FFF;
+    margin-bottom: 20px;
+}
+
+.mailing-list-description {
+    width: 475px;
+    margin: 0 auto;
+    margin-bottom: 54px;
 }
 
 .description-footer {
     color: #FFF;
+}
+
+.appointment-form {
+    width: 684px;
 }
 
 .blue-button {
@@ -291,6 +389,7 @@ body {
     display: flex;
     width: 1060px;
     margin: 0 auto;
+    padding: 40px 70px 30px;
 }
 
 .footer-socials-list {
@@ -299,6 +398,11 @@ body {
     display: flex;
     margin-right: 41.5px;
     width: 142px;
+    list-style-type: none;
+}
+
+.footer-socials-item {
+    width: 48px;
 }
 
 .number {
@@ -506,4 +610,6 @@ body {
     background-color: #F2F2F2;
     border: none;
     border-radius: 4px;
+    width: 85px;
+    padding: 14px 345px 14px 20px;
 }
