@@ -141,8 +141,8 @@ body {
 
 .background-text {
     display: block;
-    margin: 0 auto;
-    padding: 51px 371px 82px;
+    padding-top: 51px;
+    margin: 0 371px 82px;
 }
 
 .brown-button {
@@ -236,7 +236,7 @@ body {
 
 .advantages-item-text {
     flex-direction: column;
-    padding: 102px 84px;
+    margin: 102px 84px;
 }
 
 .advantages-title {
@@ -343,14 +343,15 @@ body {
 .mailing-list {
     color: #000;
     text-align: center;
-    height: 414.86px;
+    min-height: 414.86px;
     width: 1200px;
     margin: 0 auto;
 }
 
 .mailing-list-content {
     width: 684px;
-    padding: 96px 258px 104px;
+    padding-top: 96px;
+    margin: 0 258px 104px;
 }
 
 .index-footer{
@@ -395,8 +396,7 @@ body {
     color: #000;
     display: flex;
     width: 1060px;
-    margin: 0 auto;
-    padding: 40px 70px 30px;
+    margin: 40px 70px 30px;
 }
 
 .footer-socials-list {
@@ -411,6 +411,13 @@ body {
 
 .footer-socials-item {
     width: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.soccial-button {
+    padding: 12px 14px;
 }
 
 .number {
@@ -437,14 +444,15 @@ body {
     background-repeat: no-repeat;
     background-color: #2f404c;
     color: #FFF;
-
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    min-height: 412px;
 }
 
 .inner-filter {
-    width: 1060px;
-    margin: 0 auto;
-    padding: 35px 70px 70px;
-
+    padding-top: 35px;
+    margin: 0 70px 70px;
 }
 
 .inner-catalog-title {
