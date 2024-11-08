@@ -93,8 +93,9 @@ body {
 .navigation-icons {
     display: flex;
     justify-content: end;
+    flex-wrap: wrap;
     min-width: 270px;
-    max-height: 64px;
+    min-height: 64px;
 }
 
 .navigation-link {
@@ -203,6 +204,7 @@ body {
 }
 
 .advantages-list {
+    background: rgba(131, 179, 211, 0.12);
     text-align: center;
     margin: 0;
     padding: 0;
@@ -210,6 +212,11 @@ body {
     flex-wrap: wrap;
     margin-bottom: 64px;
     list-style-type: none;
+    justify-content: space-between;
+}
+
+.advantages-item:nth-child(odd) {
+    background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-item-top, .advantages-item-bottom  {
@@ -221,7 +228,6 @@ body {
 }
 
 .advantages-item {
-    background-color: #FFF;
     color: #000;
     text-align: center;
     width: 400px;
@@ -253,16 +259,6 @@ body {
     color: #FFF;
 }
 
-.dark-invisible {
-    background-color: rgba(131, 179, 211, 0.12);
-    color: #000;
-}
-
-.light-invisible{
-    background: rgba(131, 179, 211, 0.12);
-    color: #000;
-}
-
 .service {
     color: #000;
     background-color: #FFF;
@@ -280,12 +276,18 @@ body {
 }
 
 .service-list {
-    background: rgba(131, 179, 211, 0.12);
+    background: #FFF;
     margin: 0;
     padding: 0;
     display: flex;
     margin-bottom: 96px;
     list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.service-item:nth-child(odd) {
+    background: rgba(131, 179, 211, 0.12);
+    color: #000;
 }
 
 .service-title {
@@ -296,12 +298,6 @@ body {
     line-height: 28px;
     text-transform: uppercase;
     margin-bottom: 30px;
-}
-
-.service-item-no-background {
-    color: #000;
-    background-color: #FFF;
-    width: 400px;
 }
 
 .service-text {
@@ -408,12 +404,13 @@ body {
     padding: 0;
     display: flex;
     margin-right: 41.5px;
-    width: 142px;
+    min-width: 142px;
     list-style-type: none;
+    flex-wrap: wrap;
 }
 
 .footer-socials-item {
-    width: 48px;
+    width: 47px;
 }
 
 .number {
