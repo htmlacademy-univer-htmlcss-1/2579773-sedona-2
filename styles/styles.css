@@ -590,7 +590,9 @@ body {
 
 .product-card {
     width: 300px;
-    margin: 20px;
+    padding: 20px;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
 }
 
 .product-card-title {
