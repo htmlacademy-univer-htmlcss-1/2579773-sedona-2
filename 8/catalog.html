@@ -60,7 +60,7 @@
                   <a class="breadcrumbs-link">Гостиницы</a>
                 </li>
               </ul>
-              <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+              <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter">
                   <legend class="catalog-filter-title">Инфраструктура:</legend>
                   <ul class="catalog-filter-list">
@@ -109,6 +109,8 @@
                 </fieldset>
                 <fieldset class="catalog-filter">
                   <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                  <input class="filter-price-input" type="text" name="price-input-min" placeholder="от" value="0">
+                  <input class="filter-price-input" type="text" name="price-input-max" placeholder="до" value="9000">
                 </fieldset>
                 <div class="filter-buttons">
                   <button class="blue-button button " type="submit">Применить</button>
@@ -123,17 +125,20 @@
               <div class="catalog-result-top">
                 <h2 class="catalog-result-title">Найдено гостиниц: </h2>
                 <select class="select-control" aria-label="Сортировка">
-                    <option value="select-control-option cheap">Сначала дешёвые</option>
-                    <option value="select-control-option expensive">Сначала дорогие</option>
+                  <option value="select-control-option cheap">Сначала дешёвые</option>
+                  <option value="select-control-option expensive">Сначала дорогие</option>
                 </select>
-                <a class="view-button button-border">
-                    <span class="visually-hidden">Показать карточки</span>
+                <a class="view-button button-border" href="#" type="button">
+                  <span class="visually-hidden">Показать карточки</span>
+                  <svg class="view-button-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><path fill="#000" d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></svg>
                 </a>
-                <a class="view-button" href="#">
-                    <span class="visually-hidden">Показать большие карточки </span>
+                <a class="view-button" href="#" type="button">
+                  <span class="visually-hidden">Показать одну карточку</span>
+                  <svg class="view-button-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><path fill="#000" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></svg>
                 </a>
-                <a class="view-button" href="#">
-                    <span class="visually-hidden">Показать список</span>
+                <a class="view-button" href="#" type="button">
+                  <span class="visually-hidden">Показать список</span>
+                  <svg class="view-button-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><path fill="#000" d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></svg>
                 </a>
               </div>
               <div class="all-products-cards">
@@ -152,10 +157,18 @@
                     </a>
                     <button class="product-card-button-like button" type="button">В избранное</button>
                     <div class="star-rating">
-                      <span class="star-rating-item checked"></span>
-                      <span class="star-rating-item checked"></span>
-                      <span class="star-rating-item checked"></span>
-                      <span class="star-rating-item checked"></span>
+                      <span class="star-rating-item checked">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none" viewBox="0 0 18 17"><path fill="#83B3D3" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg>
+                      </span>
+                      <span class="star-rating-item checked">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none" viewBox="0 0 18 17"><path fill="#83B3D3" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg>
+                      </span>
+                      <span class="star-rating-item checked">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none" viewBox="0 0 18 17"><path fill="#83B3D3" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg>
+                      </span>
+                      <span class="star-rating-item checked">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none" viewBox="0 0 18 17"><path fill="#83B3D3" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg>
+                      </span>
                       <span class="star-rating-item"></span>
                     </div>
                     <span class="product-card-rank">Рейтинг:8,5</span>
@@ -176,10 +189,18 @@
                       </a>
                       <button class="product-card-button-like button" type="button">В избранное</button>
                       <div class="star-rating">
-                          <span class="star-rating-item checked"></span>
-                          <span class="star-rating-item checked"></span>
-                          <span class="star-rating-item checked"></span>
-                          <span class="star-rating-item checked"></span>
+                          <span class="star-rating-item checked">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none" viewBox="0 0 18 17"><path fill="#83B3D3" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg>
+                          </span>
+                          <span class="star-rating-item checked">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none" viewBox="0 0 18 17"><path fill="#83B3D3" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg>
+                          </span>
+                          <span class="star-rating-item checked">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none" viewBox="0 0 18 17"><path fill="#83B3D3" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg>
+                          </span>
+                          <span class="star-rating-item checked">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none" viewBox="0 0 18 17"><path fill="#83B3D3" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg>
+                          </span>
                           <span class="star-rating-item"></span>
                       </div>
                       <span class="product-card-rank">Рейтинг:9,2</span>
@@ -200,9 +221,15 @@
                       </a>
                       <button class="product-card-button-like button" type="button">В избранное</button>
                       <div class="star-rating">
-                          <span class="star-rating-item checked"></span>
-                          <span class="star-rating-item checked"></span>
-                          <span class="star-rating-item checked"></span>
+                          <span class="star-rating-item checked">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none" viewBox="0 0 18 17"><path fill="#83B3D3" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg>
+                          </span>
+                          <span class="star-rating-item checked">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none" viewBox="0 0 18 17"><path fill="#83B3D3" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg>
+                          </span>
+                          <span class="star-rating-item checked">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none" viewBox="0 0 18 17"><path fill="#83B3D3" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg>
+                          </span>
                           <span class="star-rating-item"></span>
                           <span class="star-rating-item"></span>
                       </div>
@@ -224,8 +251,12 @@
                       </a>
                       <button class="product-card-button-like button" type="button">В избранное</button>
                       <div class="star-rating">
-                          <span class="star-rating-item checked"></span>
-                          <span class="star-rating-item checked"></span>
+                          <span class="star-rating-item checked">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none" viewBox="0 0 18 17"><path fill="#83B3D3" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg>
+                          </span>
+                          <span class="star-rating-item checked">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none" viewBox="0 0 18 17"><path fill="#83B3D3" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg>
+                          </span>
                           <span class="star-rating-item"></span>
                           <span class="star-rating-item"></span>
                           <span class="star-rating-item"></span>
@@ -265,7 +296,7 @@
             <h2 class="title-footer-catalog">Подпишитесь на рассылку</h2>
             <p class="title-description footer-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="email" name="email" type="email" value="Ваш email">
+              <input class="email" name="email" type="email" placeholder="Ваш email">
               <button class="subscribe-button button" type="submit">Подписаться</button>
             </form>
           </div>
