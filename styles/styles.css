@@ -39,6 +39,9 @@ body {
     border-radius: 4px;
     border: none;
     height: 36px;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 0;
 }
 
 .visually-hidden {
@@ -334,6 +337,14 @@ body {
     margin-bottom: 20px;
 }
 
+.hotel-search .brown-button {
+    padding: 8px 50px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    min-height: 52px;
+}
+
 .title-description {
     margin-bottom: 54px;
 }
@@ -378,6 +389,8 @@ body {
 
 .appointment-form {
     width: 684px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .blue-button {
@@ -486,6 +499,13 @@ body {
     margin-bottom: 40px;
 }
 
+.filter {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 1060;
+}
+
 .catalog-filter {
     border: none;
     display: flex;
@@ -497,6 +517,10 @@ body {
 
 .catalog-filter:nth-child(2) {
     margin-right: 140px;
+}
+
+.catalog-filter:last-child {
+    margin-right: 0;
 }
 
 .catalog-filter-title {
@@ -525,6 +549,31 @@ body {
     margin: 0;
 }
 
+.filter-price-input {
+    padding: 0;
+    color: #000;
+    width: 123px;
+    height: 48px;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+.filter-price-input::placeholder {
+    padding-left: 90px;
+}
+
+.filter-price-input:last-child {
+    border-radius: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-left: 2px;
+}
+
 .filter-buttons {
     display: flex;
     flex-direction: column;
@@ -533,10 +582,29 @@ body {
     width: 191px;
 }
 
-
 .reset-buton {
     background-color: transparent;
     margin-top: 32px;
+}
+
+.view-button {
+    width: 48px;
+    height: 48px;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.view-button-svg {
+    padding: 17px 16px;
+}
+
+.button-border {
+    border: 2px solid #000;
+}
+
+.view-button:last-child {
+    margin-right: 0;
 }
 
 .catalog-result {
@@ -563,7 +631,6 @@ body {
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
-    margin-right: 170px;
 }
 
 .select-control {
@@ -575,6 +642,7 @@ body {
     border: 2px solid #E5E5E5;
     border-radius: 4px;
     margin-right: 70px;
+    margin-left: auto;
 }
 
 .select-control-option {
@@ -583,12 +651,16 @@ body {
 
 .all-products-cards {
     margin-bottom: 80px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    gap: 20px;
 }
 
 .product-card {
-    width: 340px;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
 }
 
 .product-card-title {
@@ -596,10 +668,23 @@ body {
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
+    margin: 0;
+    margin-bottom: 16px;
 }
 
 .product-card-link {
     text-decoration: none;
+}
+
+.product-card-image {
+    margin-bottom: 16px;
+}
+
+.product-card-grid {
+    display: grid;
+    grid-template-columns: 140px 140px;
+    column-gap: 20px;
+    row-gap: 16px;
 }
 
 .product-card-type, .product-card-price {
@@ -608,16 +693,19 @@ body {
     line-height: 21px;
 }
 
+.product-card-price {
+    text-align: end;
+}
+
 .product-card-button-more {
-    color: #FFF;
     background-color: #756157;
-    font-size: 16px;
-    line-height: 20px;
     text-align: center;
     text-decoration: none;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-radius: 4px;
+}
+
+.button-more-text {
+    display: block;
+    margin: 8px 26px;
 }
 
 .product-card-button-like {
@@ -625,6 +713,7 @@ body {
 }
 
 .product-card-rank {
+    padding: 9px 22px 8px 23px;
     text-align: center;
     color: #333;
     background-color: #F2F2F2;
@@ -703,6 +792,10 @@ body {
     line-height: 36px;
     text-align: center;
     font-weight: 700;
+    padding: 8px 50px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    min-height: 52px;
 }
 
 .email {
@@ -710,7 +803,8 @@ body {
     line-height: 24px;
     background-color: #F2F2F2;
     border: none;
-    border-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
     width: 85px;
     padding: 14px 345px 14px 20px;
 }
