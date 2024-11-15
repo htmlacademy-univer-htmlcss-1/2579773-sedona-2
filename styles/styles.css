@@ -715,6 +715,10 @@ body {
     margin-left: 2px;
 }
 
+.filter-price-input:focus {
+    outline: 3px solid #83B3D3;
+}
+
 .filter-buttons {
     display: flex;
     flex-direction: column;
@@ -840,6 +844,79 @@ body {
 
 .select-control-option {
     margin: 14px 131px 14px 20px;
+}
+
+.control {
+    position: relative;
+    display: block;
+    padding-left: 32px;
+}
+
+.control-mark {
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: #FFF;
+    border-radius: 4px;
+}
+
+.control:hover .control-mark,
+.control:hover .control-label {
+    opacity: 0.6;
+}
+
+.control:focus .control-mark {
+    outline: 3px solid #83B3D3;
+}
+
+.control:active .control-mark,
+.control:active .control-label {
+    opacity: 0.3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+    position: absolute;
+    background-image: url("../images/check-mark.svg");
+    background-repeat: no-repeat;
+    background-size: 13px 11px;
+    background-position: center;
+}
+
+.control-radio-mark {
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+
+.control:hover .control-radio-mark{
+    opacity: 0.6;
+}
+
+.control:focus .control-radio-mark {
+    outline: 3px solid #83B3D3;
+}
+
+.control:active .control-radio-mark {
+    opacity: 0.3;
+}
+
+.control-input[type="radio"]:checked + .control-radio-mark::before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background-color: #3F5E72;
+    border-radius: 50%;
 }
 
 .all-products-cards {
@@ -1118,4 +1195,51 @@ body {
     border-bottom-left-radius: 4px;
     width: 85px;
     padding: 14px 345px 14px 20px;
+}
+
+.range-wrapper-inputs {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.range-scale {
+    position: relative;
+    height: 4px;
+    margin-bottom: 0;
+    margin-top: 36px;
+    background-color: #ffffff30;
+}
+
+.range-bar {
+    position: absolute;
+    height: 4px;
+    background-color: #FFF;
+    width: 226px;
+}
+
+.range-toggle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.range-toggle:active {
+    outline: 2px solid #83B3D3;
+}
+
+.range-toggle:focus {
+    outline: 3px solid #83B3D3;
+}
+
+.toggle-min {
+    top: -8px;
+}
+
+.toggle-max {
+    top: -8px;
+    right: -10px;
 }
