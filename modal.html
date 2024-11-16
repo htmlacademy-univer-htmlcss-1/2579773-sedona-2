@@ -215,7 +215,19 @@
               <input class="people-input" type="number" name="adults" min="1" max="10" value="2">
             </p>
             <p class="field-group">
-              <label class="field-group-title people-title">Дети:</label>
+              <span class="form-label form-label-icon">
+                <label class="field-group-title people-title">
+                  Дети:
+                    <span class="tooltip">
+                    <button class="tooltip-toggle" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26"><circle cx="13" cy="13" r="13" fill="#83B3D3"/><path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd"/></svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
+                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                    </span>
+                  </span>
+                </label>
+              </span>
               <input class="people-input" type="number" name="children" min="1" max="10" value="2">
             </p>
             <button class="blue-button button search-button long-column" type="submit">Найти</button>
