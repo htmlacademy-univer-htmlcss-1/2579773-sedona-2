@@ -1254,4 +1254,115 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(242, 242, 242, 0.8);
-  }
+}
+
+.modal {
+    position: relative;
+    margin: auto;
+    background-color: #FFF;
+    border-radius: 30px;
+}
+
+.modal-content {
+    width: 577px;
+    padding: 64px 70px;
+}
+
+.modal-close-button {
+    position: absolute;
+    padding: 0;
+    top: 64px;
+    right: 52px;
+    width: 52px;
+    height: 52px;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 50%;
+    background-image: url("../images/cross.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.modal-close-button:hover {
+    background-color: #E6E6E6;
+}
+
+.modal-close-button:active {
+    background-color: #E6E6E6;
+    opacity: 0.3;
+}
+
+.modal-close-button:focus {
+    background-color: #E6E6E6;
+    outline: 3px solid #83B3D3;
+}
+
+.modal-title {
+    margin: 0;
+    margin-bottom: 64px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.field-group-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.field-group {
+    margin: 0;
+}
+
+.search-form {
+    display: grid;
+    grid-template-columns: 274px 274px;
+    grid-template-rows: 48px 48px 48px 60px;
+    gap: 48px;
+}
+
+.long-column {
+    grid-column: span 2;
+}
+
+.date-input {
+    width: 420px;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    border: none;
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+.arrive-date {
+    margin-right: 24px;
+}
+
+.exit-date {
+    margin-right: 18px;
+}
+
+.people-input {
+    width: 110px;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    border: none;
+    font-weight: 700;
+    padding-left: auto;
+}
+
+.people-title {
+    margin-right: 46px;
+}
+
+.search-button {
+    height: 100%;
+    border-radius: 10px;
+}
