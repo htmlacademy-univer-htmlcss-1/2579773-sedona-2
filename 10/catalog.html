@@ -118,8 +118,14 @@
                     <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                     <div class="range">
                       <div class="range-wrapper-inputs">
-                        <input class="filter-price-input" type="text" name="price-input-min" placeholder="от" value="0">
-                        <input class="filter-price-input" type="text" name="price-input-max" placeholder="до" value="9000">
+                        <div class="filter-price-wrapper">
+                          <input class="filter-price-input min-price" type="text" name="price-input-min" value="0">
+                          <span class="filter-price-text">от</span>
+                        </div>
+                        <div class="filter-price-wrapper">
+                          <input class="filter-price-input max-price" type="text" name="price-input-max" value="9000">
+                          <span class="filter-price-text">до</span>
+                        </div>
                       </div>
                       <div class="range-scale">
                         <div class="range-bar">

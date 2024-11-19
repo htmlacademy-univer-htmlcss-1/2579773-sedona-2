@@ -203,36 +203,40 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group long-column">
               <label class="field-group-title arrive-date">Дата заезда:</label>
-              <span class="date-input">
-                <input class="date-input-field" type="date" name="arrive-date">
-                <span class="date-input-text">27 апреля 2020</span>
-                <span class="date-input-button"></span>
+              <span class="date-input" tabindex="0">
+                <input class="date-input-field" type="date" name="arrive-date" tabindex="-1">
+                <span class="date-input-button" tabindex="-1"></span>
+                <span class="date-input-text" tabindex="-1">27 апреля 2020</span>
               </span>
               <span class="input-comment wrong-date">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="field-group long-column">
               <label class="field-group-title exit-date">Дата выезда:</label>
-              <span class="date-input">
-                <input class="date-input-field" type="date" name="exit-date">
-                <span class="date-input-text">1 сентября 2021</span>
-                <span class="date-input-button"></span>
+              <span class="date-input" tabindex="0">
+                <input class="date-input-field" type="date" name="exit-date" tabindex="-1">
+                <span class="date-input-button" tabindex="-1"></span>
+                <span class="date-input-text" tabindex="-1">1 сентября 2021</span>
               </span>
               <span class="input-comment">На эти даты есть свободные номера. Пока есть.</span>
             </p>
             <p class="field-group">
               <label class="field-group-title people-title">Взрослые:</label>
               <span class="people-input">
-                <input class="people-input-field" type="number" name="adults" min="1" max="10">
+              <input class="people-input-field" type="number" name="adults" min="1" max="10" tabindex="-1">
                 <span class="people-input-text">2</span>
-                <span class="plus">
-                  <svg class="plus-svg" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
-                  </svg>
-                </span>
                 <span class="minus">
-                  <svg class="minus-svg" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 9V11H17V9H3Z"/>
-                  </svg>
+                  <button class="svg-button" type="button">
+                    <svg class="minus-svg" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M3 9V11H17V9H3Z"/>
+                    </svg>
+                  </button>
+                </span>
+                <span class="plus">
+                  <button class="svg-button" type="button">
+                    <svg class="plus-svg" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                    </svg>
+                  </button>
                 </span>
               </span>
             </p>
@@ -251,17 +255,21 @@
                 </label>
               </span>
               <span class="people-input">
-                <input class="people-input-field" type="number" name="children" min="1" max="10">
+                <input class="people-input-field" type="number" name="children" min="1" max="10" tabindex="-1">
                 <span class="people-input-text">2</span>
-                <span class="plus">
-                  <svg class="plus-svg" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
-                  </svg>
-                </span>
                 <span class="minus">
-                  <svg class="minus-svg" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 9V11H17V9H3Z"/>
-                  </svg>
+                  <button class="svg-button" type="button">
+                    <svg class="minus-svg" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M3 9V11H17V9H3Z"/>
+                    </svg>
+                  </button>
+                </span>
+                <span class="plus">
+                  <button class="svg-button" type="button">
+                    <svg class="plus-svg" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                    </svg>
+                  </button>
                 </span>
               </span>
             </p>
