@@ -690,29 +690,51 @@ body {
     margin: 0;
 }
 
+.filter-price-wrapper {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
 .filter-price-input {
+    position: relative;
     padding: 0;
     color: #000;
     width: 123px;
     height: 48px;
     border: none;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
     padding-left: 20px;
 }
 
-.filter-price-input::placeholder {
-    padding-left: 90px;
+.min-price {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 
-.filter-price-input:last-child {
+.max-price {
     border-radius: 0;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     margin-left: 2px;
+}
+
+.filter-price-input:focus {
+    outline: 3px solid #83B3D3;
+}
+
+.filter-price-text {
+    position: absolute;
+    min-width: 17px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000;
+    opacity: 0.3;
+    top: 12px;
+    left: 106px;
 }
 
 .filter-buttons {
@@ -840,6 +862,79 @@ body {
 
 .select-control-option {
     margin: 14px 131px 14px 20px;
+}
+
+.control {
+    position: relative;
+    display: block;
+    padding-left: 32px;
+}
+
+.control-mark {
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: #FFF;
+    border-radius: 4px;
+}
+
+.control:hover .control-mark,
+.control:hover .control-label {
+    opacity: 0.6;
+}
+
+.control:focus .control-mark {
+    outline: 3px solid #83B3D3;
+}
+
+.control:active .control-mark,
+.control:active .control-label {
+    opacity: 0.3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+    position: absolute;
+    background-image: url("../images/check-mark.svg");
+    background-repeat: no-repeat;
+    background-size: 13px 11px;
+    background-position: center;
+}
+
+.control-radio-mark {
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+
+.control:hover .control-radio-mark{
+    opacity: 0.6;
+}
+
+.control:focus .control-radio-mark {
+    outline: 3px solid #83B3D3;
+}
+
+.control:active .control-radio-mark {
+    opacity: 0.3;
+}
+
+.control-input[type="radio"]:checked + .control-radio-mark::before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background-color: #3F5E72;
+    border-radius: 50%;
 }
 
 .all-products-cards {
@@ -1118,4 +1213,395 @@ body {
     border-bottom-left-radius: 4px;
     width: 85px;
     padding: 14px 345px 14px 20px;
+}
+
+.range-wrapper-inputs {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.range-scale {
+    position: relative;
+    height: 4px;
+    margin-bottom: 0;
+    margin-top: 36px;
+    background-color: #ffffff30;
+}
+
+.range-bar {
+    position: absolute;
+    height: 4px;
+    background-color: #FFF;
+    width: 226px;
+}
+
+.range-toggle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.range-toggle:active {
+    outline: 2px solid #83B3D3;
+}
+
+.range-toggle:focus {
+    outline: 3px solid #83B3D3;
+}
+
+.toggle-min {
+    top: -8px;
+}
+
+.toggle-max {
+    top: -8px;
+    right: -10px;
+}
+
+/* modal */
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+    position: relative;
+    margin: auto;
+    background-color: #FFF;
+    border-radius: 30px;
+}
+
+.modal-content {
+    width: 577px;
+    padding: 64px 70px;
+}
+
+.modal-close-button {
+    position: absolute;
+    padding: 0;
+    top: 64px;
+    right: 52px;
+    width: 52px;
+    height: 52px;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 50%;
+    background-image: url("../images/cross.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.modal-close-button:hover {
+    background-color: #E6E6E6;
+}
+
+.modal-close-button:active {
+    background-color: #E6E6E6;
+    opacity: 0.3;
+}
+
+.modal-close-button:focus {
+    background-color: #E6E6E6;
+    outline: 3px solid #83B3D3;
+}
+
+.modal-title {
+    margin: 0;
+    margin-bottom: 64px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.search-form {
+    display: grid;
+    grid-template-columns: 274px 274px;
+    grid-template-rows: 48px 48px 48px 60px;
+    gap: 48px;
+}
+
+.field-group-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.field-group {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.long-column {
+    grid-column: span 2;
+}
+
+.date-input {
+    display: inline-block;
+    position: relative;
+    width: 440px;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    border: none;
+}
+
+.date-input-field {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: default;
+    box-sizing: border-box;
+    border: none;
+    z-index: 1;
+}
+
+.date-input-field[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    opacity: 1;
+    width: 20px;
+    height: 20px;
+    top: 16px;
+    left: 402px;
+    cursor: pointer;
+}
+
+.date-input-button {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/calendar.svg');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: 16px;
+    left: 402px;
+    z-index: 0;
+}
+
+.date-input-text {
+    display: block;
+    font-weight: 700;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    width: 140px;
+    margin: 12px auto 12px 20px;
+    color: #000;
+}
+
+.date-input:hover {
+    background-color: #E6E6E6;
+}
+
+.date-input:focus {
+    outline: 3px solid #83B3D3
+}
+
+.arrive-date {
+    margin-right: 24px;
+}
+
+.exit-date {
+    margin-right: 18px;
+}
+
+.people-input {
+    display: inline-block;
+    position: relative;
+    width: 110px;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    border: none;
+}
+
+.people-input-field {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    box-sizing: border-box;
+    border: none;
+    font-weight: 700;
+    padding-left: auto;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: default;
+}
+
+.people-input-text {
+    position: relative;
+    display: block;
+    font-weight: 700;
+    width: 31px;
+    height: 48px;
+    margin: auto;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    align-content: center;
+    cursor: default;
+}
+
+.plus-svg,
+.minus-svg {
+    fill: #756157;
+    fill-opacity: 0.3;
+}
+
+.minus {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    bottom: 14px;
+    right: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.plus {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    bottom: 14px;
+    right: 10px;
+    left: auto;
+    cursor: pointer;
+}
+
+.svg-button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    padding: 0;
+    border-radius: 3px;
+}
+
+.svg-button:hover .plus-svg,
+.svg-button:hover .minus-svg{
+    fill: #000;
+    fill-opacity: 1;
+}
+
+.svg-button:focus {
+    fill: #000;
+    fill-opacity: 1;
+    outline: 3px solid #82B3D3;
+}
+
+.svg-button:active .plus-svg,
+.svg-button:active .minus-svg{
+    fill-opacity: 0.2;
+    outline: none;
+}
+
+.people-title {
+    margin-right: 46px;
+}
+
+.search-button {
+    height: 100%;
+    border-radius: 10px;
+    max-width: 577px;
+}
+
+.input-comment {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 21px;
+    margin-left: 157px;
+}
+
+.wrong-date {
+    color: #FF5757;
+}
+
+/* tooltip */
+
+.tooltip-toggle {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.tooltip-icon {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.tooltip-text::before{
+    content:"";
+    background-image: url("../images/tooltip-arrow.svg");
+    width: 19px;
+    height: 8px;
+    position:absolute;
+    bottom: 100%;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tooltip-text {
+    background-color: #333333;
+    padding: 15px 18px 18px 22px;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 10px;
+    width: 216px;
+    box-shadow: 0 15px 30px 0 #0000004D;
+    font-weight: 400;
+    position: absolute;
+    margin-top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    text-transform: none;
+    display: none;
+}
+
+.tooltip {
+    position: absolute;
+    margin-left: 10px;
+    width: 26px;
+    height: 26px;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.form-label-icon {
+    position: relative;
+    margin-right: 46px;
 }
